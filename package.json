@@ -9,7 +9,7 @@
     "backstop": "npm run backstop:ref && backstop test",
     "chromatic": "npx chromatic --app-code=u2hjc0tghv --storybook-port=6006",
     "lint": "eslint src/**/*.{js,jsx} -c .eslintrc.json",
-    "prepare": "npm run test && npm run build",
+    "prepare": "npm run test && npm run build && cp README.md build/README.md && cp LICENSE build/LICENSE",
     "storybook": "start-storybook -p 6006",
     "test:ci": "start-server-and-test storybook http://localhost:6006 backstop",
     "build-storybook": "build-story-book",
