@@ -1,0 +1,16 @@
+language: node_js
+node_js: stable
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run prepublish
+
+deploy:
+  provider: npm
+  email: $email_address
+  api_key:
+    secure: $npm_auth_token
+  local_dir: build
+  skip_cleanup: true

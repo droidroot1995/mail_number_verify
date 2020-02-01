@@ -1,0 +1,123 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\numbercomponent_NumberComponent_0_nc_0_phone.png",
+        "test": "..\\bitmaps_test\\20200201-220727\\numbercomponent_NumberComponent_0_nc_0_phone.png",
+        "selector": ".nc",
+        "fileName": "numbercomponent_NumberComponent_0_nc_0_phone.png",
+        "label": "NumberComponent",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--num-component",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "error": "Reference file not found C:\\Users\\Александр\\Мои документы\\mail_number_verify\\backstop_data\\bitmaps_reference\\numbercomponent_NumberComponent_0_nc_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\numbercomponent_NumberComponent_0_nc_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200201-220727\\numbercomponent_NumberComponent_0_nc_1_tablet.png",
+        "selector": ".nc",
+        "fileName": "numbercomponent_NumberComponent_0_nc_1_tablet.png",
+        "label": "NumberComponent",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--num-component",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "error": "Reference file not found C:\\Users\\Александр\\Мои документы\\mail_number_verify\\backstop_data\\bitmaps_reference\\numbercomponent_NumberComponent_0_nc_1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "diff": {
+          "isSameDimensions": "",
+          "dimensionDifference": {
+            "width": "",
+            "height": ""
+          },
+          "misMatchPercentage": ""
+        },
+        "reference": "..\\..",
+        "test": "..\\..",
+        "selector": "",
+        "fileName": "",
+        "label": "",
+        "scenario": {
+          "label": "NumberComponent",
+          "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--num-component",
+          "delay": 0,
+          "selectors": [
+            ".nc"
+          ],
+          "misMatchThreshold": 0.1,
+          "requireSameDimensions": true,
+          "sIndex": 0
+        },
+        "viewport": {
+          "label": "notebook",
+          "width": 1920,
+          "height": 1080,
+          "vIndex": 2
+        },
+        "msg": "Chromy error",
+        "error": "Chromy error: Error. See scenario – NumberComponent (notebook)"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_0_phone.png",
+        "test": "..\\bitmaps_test\\20200201-220727\\numbercomponent_NumberComponentError_0_nce_0_phone.png",
+        "selector": ".nce",
+        "fileName": "numbercomponent_NumberComponentError_0_nce_0_phone.png",
+        "label": "NumberComponentError",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--number-component-error",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "error": "Reference file not found C:\\Users\\Александр\\Мои документы\\mail_number_verify\\backstop_data\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200201-220727\\numbercomponent_NumberComponentError_0_nce_1_tablet.png",
+        "selector": ".nce",
+        "fileName": "numbercomponent_NumberComponentError_0_nce_1_tablet.png",
+        "label": "NumberComponentError",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--number-component-error",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "error": "Reference file not found C:\\Users\\Александр\\Мои документы\\mail_number_verify\\backstop_data\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_2_notebook.png",
+        "test": "..\\bitmaps_test\\20200201-220727\\numbercomponent_NumberComponentError_0_nce_2_notebook.png",
+        "selector": ".nce",
+        "fileName": "numbercomponent_NumberComponentError_0_nce_2_notebook.png",
+        "label": "NumberComponentError",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--number-component-error",
+        "expect": 0,
+        "viewportLabel": "notebook",
+        "error": "Reference file not found C:\\Users\\Александр\\Мои документы\\mail_number_verify\\backstop_data\\bitmaps_reference\\numbercomponent_NumberComponentError_0_nce_2_notebook.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "numbercomponent"
+}

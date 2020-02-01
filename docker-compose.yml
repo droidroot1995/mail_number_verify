@@ -1,0 +1,21 @@
+version: "3.6"
+services:
+  test:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        NODE_ENV: "development"
+    command: npm run test
+    volumes:
+      - .:/code
+      - /code/node_modules
+    ports:
+      - "4000:4000"
+    networks:
+      - webnet
+    environment:
+      HOST: "0.0.0.0"
+
+networks:
+  webnet:

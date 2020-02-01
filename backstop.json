@@ -1,0 +1,57 @@
+{
+  "id": "numbercomponent",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+
+    {
+      "label": "notebook",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "NumberComponent",
+      "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--num-component",
+      "delay": 0,
+      "selectors": [".nc"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "NumberComponentError",
+      "url": "http://localhost:6006/iframe.html?id=numbercomponent-demo--number-component-error",
+      "delay": 0,
+      "selectors": [".nce"],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser", "json"],
+  "engine": "chromy",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 2,
+  "asyncCompareLimit": 5,
+  "debug": false,
+  "debugWindow": false
+}
