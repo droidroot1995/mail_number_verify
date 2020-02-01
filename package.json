@@ -18,6 +18,9 @@
     "test:sec": "npm audit || true",
     "test:unit": "cross-env NODE_ENV=test jest --coverage"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/droidroot1995/mail_number_verify.git"
