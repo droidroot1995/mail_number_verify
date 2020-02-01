@@ -1,5 +1,5 @@
 {
-  "name": "NumberComponent",
+  "name": "@droidroot/number_component",
   "version": "0.1.0",
   "description": "Component for telephone number input with input digits of a phone number with a possible masked part",
   "main": "./build/NumberComponent.js",
