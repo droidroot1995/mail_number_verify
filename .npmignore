@@ -157,3 +157,15 @@ example
 .eslintrc.json
 jest.config.js
 .prettierrc
+.storybook
+backstop_data
+stories
+.dockerignore
+Makefile
+.travis.yml
+backstop.json
+docker-compose.yml
+Dockerfile
+index.html
+package-lock.json
+webpack.config.js

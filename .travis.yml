@@ -7,10 +7,15 @@ cache:
 script:
   - npm run lint
 
+before install:
+  - npm i -g makeshift && makeshift -s @droidroot -r registry.npmjs.org
+
 deploy:
   provider: npm
   email: goryakin@phystech.edu
-  api_key: 
-    secure: $npm_auth_token
+  api_key: $npm_auth_token
   local_dir: build
   skip_cleanup: true
+  on:
+    branch: master
+    tags: true
