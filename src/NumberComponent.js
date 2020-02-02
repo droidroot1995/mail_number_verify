@@ -79,6 +79,19 @@ template.innerHTML = `
   border: 1px solid rgba(0, 0, 0, 0.48);
 }
 
+.number:focus {
+  border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+.wrapper.error > .phone > .number:active {
+  border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+.wrapper.error > .phone > .number:focus {
+  border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+
 @media screen and (max-width: 320px) {
   .number {
     width: 18px;
@@ -158,7 +171,7 @@ template.innerHTML = `
 
   .wrapper.error > .phone > .number:hover {
     border: 1px solid rgba(0, 0, 0, 0.24);
-  }
+  }  
 }
 
 </style>
