@@ -4,9 +4,6 @@ cache:
   directories:
     - node_modules
 
-script:
-  - npm run lint
-
 before install:
   - npm i -g makeshift && makeshift -s @droidroot -r registry.npmjs.org
 
