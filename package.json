@@ -1,18 +1,19 @@
 {
   "name": "@droidroot/number_component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Component for telephone number input with input digits of a phone number with a possible masked part",
   "main": "./build/NumberComponent.js",
   "scripts": {
-    "build": "webpack --optimize-minimize --mode=production",
     "backstop:ref": "backstop reference",
     "backstop": "npm run backstop:ref && backstop test",
+    "build": "webpack --optimize-minimize --mode=production",
+    "build-storybook": "build-story-book",
     "chromatic": "npx chromatic --app-code=u2hjc0tghv --storybook-port=6006",
     "lint": "eslint src/**/*.{js,jsx} -c .eslintrc.json",
     "prepare": "npm run test && npm run build",
+    "pub": "npm publish",
     "storybook": "start-storybook -p 6006",
     "test:ci": "start-server-and-test storybook http://localhost:6006 backstop",
-    "build-storybook": "build-story-book",
     "test": "npm run test:engine && npm run test:unit && npm run lint && npm run chromatic",
     "test:engine": "check-engine",
     "test:sec": "npm audit || true",
@@ -33,7 +34,7 @@
   "author": "A.A. Goryakin",
   "license": "MIT",
   "links": {
-    "npm": "https://npmjs.com/packages/NumberComponent",
+    "npm": "https://npmjs.com/package/@droidroot/number_component",
     "homepage": "https://github.com/droidroot1995/mail_number_verify#readme",
     "repository": "https://github.com/droidroot1995/mail_number_verify",
     "bugs": "https://github.com/droidroot1995/mail_number_verify/issues"

@@ -20,3 +20,6 @@ unit:
 
 lint:
 	docker-compose run test npm run lint
+
+chromatic:
+	docker-compose run test npm run chromatic
