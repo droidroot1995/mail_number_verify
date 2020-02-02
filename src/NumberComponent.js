@@ -170,6 +170,7 @@ export class NumberComponent extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     shadowRoot.appendChild(template.content.cloneNode(true))
     this.$wrapper = this.shadowRoot.querySelector('.wrapper')
+    this.$wrapper.addEventListener('mouseover', () =>  { this.Error = false })
     this.$phone = this.shadowRoot.querySelector('.phone')
     this.$mask = '+7(III)III-II-II'
   }
@@ -294,6 +295,9 @@ export class NumberComponent extends HTMLElement {
           elem = document.createElement('input')
           elem.maxLength = 1
           elem.className = 'number'
+          elem.onkeypress = (event) => {
+            return event.charCode >= 48 && event.charCode <= 57
+          }
           elem.placeholder = '_'
           this.$phone.appendChild(elem)
           break
