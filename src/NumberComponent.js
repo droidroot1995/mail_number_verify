@@ -155,6 +155,10 @@ template.innerHTML = `
   .number:hover {
     border: 1px solid rgba(0, 0, 0, 0.24);
   }
+
+  .wrapper.error > .phone > .number:hover {
+    border: 1px solid rgba(0, 0, 0, 0.24);
+  }
 }
 
 </style>
@@ -170,7 +174,6 @@ export class NumberComponent extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     shadowRoot.appendChild(template.content.cloneNode(true))
     this.$wrapper = this.shadowRoot.querySelector('.wrapper')
-    this.$wrapper.addEventListener('mouseover', () =>  { this.Error = false })
     this.$phone = this.shadowRoot.querySelector('.phone')
     this.$mask = '+7(III)III-II-II'
   }
